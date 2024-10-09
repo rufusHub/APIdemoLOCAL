@@ -1,0 +1,14 @@
+{
+	"firstName":"Rodrigo",
+	"lastName":"Bermudez",
+	"id":"{{id}}",
+	"designation":"QA_Peru",
+	"address":[
+	 {"houseNo":"399",
+	  "warNo":"15",
+	  "type":"Primary"},
+	 {"houseNo":"499",
+	  "warNo":"16",
+	  "type":"Secondary"}
+	 ]
+}

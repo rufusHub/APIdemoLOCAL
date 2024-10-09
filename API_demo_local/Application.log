@@ -1,0 +1,7 @@
+
+2024-10-08 01:04:00  [TC1_PostRequest_randomNum] (main:) status code is matching
+2024-10-08 01:04:03  [TC2_GetAllRequest] (main:) status code is matching
+2024-10-08 01:04:03  [TC2_GetAllRequest] (main:) Data is matching
+2024-10-09 16:25:25  [TC1_PostRequest_randomNum] (main:) status code is matching
+2024-10-09 16:25:27  [TC2_GetAllRequest] (main:) status code is matching
+2024-10-09 16:25:28  [TC2_GetAllRequest] (main:) Data is matching
