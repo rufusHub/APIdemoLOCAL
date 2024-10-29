@@ -14,50 +14,50 @@ import org.demo.reporting.ReportHandling;
 import org.demo.responseValidation.validateResponse;
 import org.demo.testSteps.HTTPMethods;
 import org.demo.utilities.PropertiesHandle;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 
-public class TC2_GetAllRequest {
+public class TC4_GetAll_Jesus {
 	
-	@Test
+	@Test(groups = {"group2","get"})
 	public void testCase2() throws IOException {
 		
 		//Report.
 		ExtentReports report = ReportHandling.handleReport();
-		ExtentTest tc2 = report.startTest("TC2_GetAllRequest");
+		ExtentTest tc2 = report.startTest("TC4_GetAll_Jesus");
 		
 		//Values.
 		Properties p = PropertiesHandle.loadProperties("..//API_demo_local/URI.properties");
-		String expectedData = "Rodrigo";
+		String expectedData = "Jesús";
 		
 		//GET.
 		HTTPMethods http = new HTTPMethods(p);
-		Response res = http.getAlltMethod("QA_URI");
+		Response res = http.getAlltMethod("OEN_URI");
 		
 		//Validation.
-		Object result = validateResponse.statusCodeVAlidate(200, res, "TC2_GetAllRequest");
+		Object result = validateResponse.statusCodeVAlidate(200, res, "TC4_GetAll_Jesus");
 		
 		//Status validation.
 		if(result.equals(true)) {	
 			
 			//Data validation.
-			Object result_data = validateResponse.dataValidate(expectedData, res, "[0].firstName", "TC2_GetAllRequest");
+			Object result_data = validateResponse.dataValidate(expectedData, res, "[0].firstName", "TC4_GetAll_Jesus");
 			if(result_data.equals(true)) {
 				System.out.println("Satus OK, Data OK");
-				tc2.log(LogStatus.PASS, "TestCase2 is getting pass");
+				tc2.log(LogStatus.PASS, "Test Case 4, is getting pass");
 				report.endTest(tc2);
 				report.flush();
 			}
 			else {
 				System.out.println("Satus OK, Data NOK");
-				tc2.log(LogStatus.FAIL, "TestCase2 is getting fail");
+				tc2.log(LogStatus.FAIL, "Test Case 4, is getting fail");
 				report.endTest(tc2);
 				report.flush();
 			}
 		}
 		else {
 			System.out.println("Satus NOK");
-			tc2.log(LogStatus.FAIL, "TestCase2 is getting fail");
+			tc2.log(LogStatus.FAIL, "Test Case 4, is getting fail");
 			report.endTest(tc2);
 			report.flush();
 		}

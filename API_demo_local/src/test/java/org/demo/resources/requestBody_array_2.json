@@ -1,0 +1,14 @@
+{
+	"firstName":"Jesús",
+	"lastName":"López",
+	"id":"{{id}}",
+	"designation":"Senior System Engineering Manager",
+	"address":[
+	 {"houseNo":"5040",
+	  "warNo":"28",
+	  "type":"Primary"},
+	 {"houseNo":"5039",
+	  "warNo":"29",
+	  "type":"Secondary"}
+	 ]
+}

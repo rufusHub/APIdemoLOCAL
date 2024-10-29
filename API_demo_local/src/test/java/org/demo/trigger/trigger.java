@@ -2,8 +2,8 @@ package org.demo.trigger;
 
 import java.io.IOException;
 
-import org.demo.testScripts.TC1_PostRequest_randomNum;
-import org.demo.testScripts.TC2_GetAllRequest;
+import org.demo.testScripts.TC1_Post_Sabari;
+import org.demo.testScripts.TC2_GetAll_Sabari;
 
 
 public class trigger {
@@ -16,12 +16,12 @@ public class trigger {
 		
 		System.out.println("#################################################");
 		System.out.println("TC1_PostRequest_randomNum");
-		TC1_PostRequest_randomNum tc1 = new TC1_PostRequest_randomNum();
+		TC1_Post_Sabari tc1 = new TC1_Post_Sabari();
 		tc1.testCase1();
 //		
 		System.out.println("#################################################");
 		System.out.println("TC2_GetAllRequest");
-		TC2_GetAllRequest tc2 = new TC2_GetAllRequest();
+		TC2_GetAll_Sabari tc2 = new TC2_GetAll_Sabari();
 		tc2.testCase2();
 //		
 //		System.out.println("#################################################");

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+      <groups>
+    	<run>
+    		<include name = "group2">
+    		</include>
+    	</run>
+    </groups>
+    <classes>
+      <class name="org.demo.testScripts.TC1_Post_Sabari"/>
+      <class name="org.demo.testScripts.TC8_GetAll_Roberto"/>
+      <class name="org.demo.testScripts.TC3_Post_Jesus"/>
+      <class name="org.demo.testScripts.TC4_GetAll_Jesus"/>
+      <class name="org.demo.testScripts.TC7_Post_Roberto"/>
+      <class name="org.demo.testScripts.TC6_GetAll_Elie"/>
+      <class name="org.demo.testScripts.TC2_GetAll_Sabari"/>
+      <class name="org.demo.testScripts.TC5_Post_Elie"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

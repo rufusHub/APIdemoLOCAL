@@ -1,0 +1,14 @@
+{
+	"firstName":"Elie",
+	"lastName":"Allam",
+	"id":"{{id}}",
+	"designation":"Senior Program Manager",
+	"address":[
+	 {"houseNo":"2387",
+	  "warNo":"3",
+	  "type":"Primary"},
+	 {"houseNo":"2389",
+	  "warNo":"4",
+	  "type":"Secondary"}
+	 ]
+}
